@@ -1,5 +1,5 @@
 # Devflix
-Plataforma de videos en youtube para programadores
+Una plataforma de videos para la comunidad de desarrolladores
 
 #### App Key
 Crear archivo .env en la raíz del proyecto:
