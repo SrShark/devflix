@@ -1,0 +1,22 @@
+.c-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 0 2rem;
+  padding: .75rem 0;
+  width: 100%;
+  max-width: $wrap;
+}
+
+@media (max-width: $md) {
+  .c-header {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: $xs) {
+  .c-header {
+    margin: 0 1rem;
+  }
+}

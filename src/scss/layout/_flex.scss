@@ -1,0 +1,146 @@
+.l {
+  &-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  &-container {
+    width: 100%;
+    max-width: $wrap;
+    margin: 0 2rem;
+  }
+  
+  &-wrap {
+    flex-wrap: wrap;
+  }
+  
+  &-column {
+    display: flex;
+    flex-direction: column;
+
+    &--between, 
+    &--around, 
+    &--evenly, 
+    &--start, 
+    &--end, 
+    &--center, 
+    &--vertical, 
+    &--horizontal {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--between {
+      justify-content: space-between;
+    }
+    
+    &--around {
+      justify-content: space-around;
+    }
+    
+    &--evenly {
+      justify-content: space-evenly;
+    }
+
+    &--start {
+      align-items: flex-start;
+    }
+    
+    &--end {
+      align-items: flex-end;
+    }
+
+    &--center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--vertical {
+      justify-content: center;
+    }
+    
+    &--horizontal {
+      align-items: center;
+    }
+  }
+  
+  &-row {
+    display: flex;
+    flex-direction: row;
+
+    &--between, 
+    &--around, 
+    &--evenly, 
+    &--start, 
+    &--end, 
+    &--center, 
+    &--vertical, 
+    &--horizontal {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &--between {
+      justify-content: space-between;
+    }
+    
+    &--around {
+      justify-content: space-around;
+    }
+    
+    &--evenly {
+      justify-content: space-evenly;
+    }
+
+    &--start {
+      justify-content: flex-start;
+    }
+    
+    &--end {
+      justify-content: flex-end;
+    }
+
+    &--center {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--vertical {
+      align-items: center;
+    }
+
+    &--horizontal {
+      justify-content: center;
+    }
+  }
+}
+
+// 576px
+@media (max-width: $xs) {
+  .l {
+    &-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    &-container {
+      margin: 0 1rem;
+    }
+
+    &-full--xs {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
+
+    &-wrap {
+      &--mobile {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

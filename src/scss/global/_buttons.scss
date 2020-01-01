@@ -1,0 +1,230 @@
+.c-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: .25rem 1rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--primary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    padding: .5rem 1.5rem;
+    font-family: helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: $btn_primary_text;
+    background-color: $bg_btn_primary;
+    
+    &:hover {
+      color: $btn_primary_text_hover;
+      background-color: $bg_btn_primary_hover;
+    }
+  }
+  
+  &--secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: .5rem 1.5rem;
+    font-family: helvetica;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 1px 4px rgba($color: $black, $alpha: .3);
+    color: $btn_secondary_text;
+    background-color: $bg_btn_secondary;
+    
+    &:hover {
+      background-color: rgba($color: $bg_btn_secondary , $alpha: .9);
+    }
+  }
+
+  &--menu {
+    display: none;
+    align-items: center;
+    margin-right: 1rem;
+    padding: .5rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 2.5rem;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color: $white, $alpha: .15);
+    }
+
+    &::after {
+      @extend .material-icons;
+      content: 'menu';
+    }
+  }
+
+  &--new {
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    color: $btn_new;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color: $white, $alpha: .15);
+    }
+
+    &::after {
+      @extend .material-icons;
+      content: 'add_circle';
+    }
+  }
+  
+  &--inbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: .5rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    color: $white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba($color: $white, $alpha: .15);
+    }
+
+    &::after {
+      @extend .material-icons;
+      content: 'inbox';
+    }
+
+    &[data-notification="true"] {
+      &::before {
+        --size: .7rem;
+        content: '';
+        position: absolute;
+        top: .25rem;
+        right: .25rem;
+        width: var(--size);
+        height: var(--size);
+        border-radius: 1rem;
+        border: 2px solid $border_notification;
+        background-color: $notification;
+      }
+    }
+  }
+
+  &--login {
+    display: flex;
+    align-items: center;
+    margin-left: .5rem;
+    padding: .5rem 1rem .5rem .75rem;
+    font-size: 14px;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    color: $text;
+    background-color: $black;
+    transition: border-radius .2s ease-in-out;
+    
+    &:hover {
+      border-radius: 2.5rem;
+      transition: border-radius .2s ease-in-out;
+    }
+
+    &::before {
+      @extend .material-icons;
+      content: 'account_circle';
+      margin-right: .5rem;
+    }
+
+    &--home {
+      width: 100%;
+      padding: .5rem 3rem;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      color: $white;
+      background-color: $primary;
+      
+      &:hover {
+        background-color: rgba($color: $primary , $alpha: .9);
+      }
+    }
+  }
+
+  &--logout {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: .5rem;
+    background-color: transparent;
+    border-radius: 2rem;
+    color: $white;
+    cursor: pointer;
+
+    &::before {
+      @extend .material-icons;
+      content: 'exit_to_app';
+    }
+
+    &:hover {
+      background-color: rgba($color: $white, $alpha: .15);
+    }
+  }
+
+  &--logout {
+    &--mobile {
+      display: flex;
+      align-items: center;
+      width: calc(100% - 1rem);
+      margin: .5rem 0;
+      padding: .5rem 1rem;
+      font-size: 1rem;
+      line-height: .5rem;
+      border-radius: 0 2rem 2rem 0;
+      color: $menu_links;
+      background-color: transparent;
+
+      &::before {
+        @extend .material-icons;
+        content: 'exit_to_app';
+        margin-right: 1rem;
+        font-size: 1.5rem;
+      }
+
+      &:hover,
+      &:active {
+        color: $menu_hover_links;
+        background-color: $bg_menu_links;
+      }
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .c-button {
+    &--new::after { font-size: 2rem; }
+    
+    &--menu {
+      display: flex;
+      margin-right: 0;
+      
+      &::after { 
+        font-size: 2rem;
+      }
+    }
+  }
+}

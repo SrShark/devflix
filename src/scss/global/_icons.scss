@@ -1,0 +1,104 @@
+.i {
+  &--left:before { content: 'navigate_before'; }
+  &--right:before { content: 'navigate_next'; }
+  &--close:before { content: 'close'; }
+  &--save:before { content: 'save'; }
+  &--tel:before { content: 'phone'; }
+  &--email:before { content: 'email'; }
+  &--time:before { content: 'access_time'; }
+  &--period:before { content: 'schedule'; }
+  &--dir:before { content: 'location_on'; }
+  &--send:before { content: 'navigate_next'; }
+  &--drop_up:before { content: 'keyboard_arrow_up'; }
+  &--drop_down:before { content: 'keyboard_arrow_down'; }
+  &--info:before { content: 'info_outline'; }
+  &--error:before { content: 'report'; }
+  &--account:before { content: 'account_circle'; }
+  &--edit:before { content: 'edit'; }
+  &--star:before { content: 'star'; }
+  &--category:before { content: 'label'; }
+  &--subcategory:before { content: 'view_list'; }
+  &--download:before { content: 'archive'; }
+  &--upload-image:before { content: 'queue'; }
+  &--location:before { content: 'location_on'; }
+  &--my-location:before { content: 'my_location'; }
+  &--filter:before { content: 'filter_list'; }
+  &--condition:before { content: 'style'; }
+  &--type:before { content: 'bubble_chart'; }
+  &--price:before { content: 'attach_money'; }
+  &--post-price:before { content: 'monetization_on'; }
+  &--specs:before { content: 'extension'; }
+  &--video:before { content: 'play_circle_filled'; }
+  &--file:before { content: 'insert_drive_file'; }
+  &--delete:before { content: 'cancel'; }
+  &--print:before { content: 'print'; }
+  &--copy:before { content: 'copyright'; }
+  &--search:before { content: 'search'; }
+  &--featured:before { content: 'stars'; }
+  &--favorite:before { content: 'favorite'; }
+  &--report:before { content: 'report'; }
+  &--no-favorite:before { content: 'favorite_border'; }
+  &--spinner:before { content: 'refresh'; }
+  &--questions:before { content: 'chat'; }
+  &--posts:before { content: 'dashboard'; }
+  &--post--title:before { content: 'assignment'; }
+  &--collapse:before { content: 'expand_less'; }
+  &--expand:before { content: 'expand_more'; }
+  &--date:before { content: 'calendar_today'; }
+   
+  &--user-email:before,
+  &--user-my-location:before,
+  &--user-location:before,
+  &--user-adress:before,
+  &--user-tel:before,
+  &--user-social-media:before,
+  &--user-account:before,
+  &--user-password:before { 
+    font-size: 1.5rem;
+  }
+
+  &--user-email:before {content: 'email';}
+  &--user-my-location:before { content: 'my_location'; }
+  &--user-location:before { content: 'location_on'; }
+  &--user-adress:before { content: 'location_city'; }
+  &--user-tel:before { content: 'phone'; }
+  &--user-social-media:before { content: 'public'; }
+  &--user-account:before { content: 'account_circle'; }
+  &--user-password:before { content: 'lock'; }
+  
+  &--post--title,
+  &--upload-image,
+  &--period,
+  &--subcategory,
+  &--post-price,
+  &--specs {
+    &:before {
+      @extend .material-icons;
+      font-size: 1.75rem;
+      margin-right: .75rem;
+    }
+  }
+
+}
+
+.fa {
+  &-whatsapp {
+    color: $whatsapp !important;
+  }
+
+  &-facebook-square {
+    color: $facebook !important;
+  }
+  
+  &-twitter-square {
+    color: $twitter !important;
+  }
+  
+  &-instagram {
+    color: $instagram !important;
+  }
+  
+  &-globe {
+    color: $web !important;
+  }
+}

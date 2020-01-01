@@ -1,0 +1,254 @@
+$channels-default: #8e9297;
+$interactive-normal: #b9bbbe;
+$interactive-hover: #dcddde;
+$interactive-active: #fff;
+$interactive-muted: #4f545c;
+$background-accent: #4f545c;
+$background-floating: #18191c;
+$background-mobile-header: #2f3136;
+
+// Globals
+$primary: $purple_900;
+$primary_soft: $blue_A400;
+$secondary: $purple_A700;
+$secondary_soft: $blue_A400;
+$gradient_1: $primary;
+$gradient_2: $purple_A700;
+
+// Textos
+$text: $gray_300;
+$text_link: #00b0f4;
+$text_success: $teal_900;
+$text_placeholder: $gray_600;
+$text_error: $white;
+$text_selection: $white;
+
+// Backgounds
+$bg_primary: #36393f;
+$bg_secondary: #2f3136;
+$bg_dark: #202225;
+$bg_primary_soft: $blue_A400;
+$bg_black: $black;
+$bg_copy: $blue_gray_900;
+$bg_body: $bg_primary;
+$bg_overlay: $black;
+$bg_error: $red_A400;
+$bg_success: $green_A400;
+$bg_selection: $secondary;
+$bg_notification: $blue_50;
+$bg_search: $white;
+$bg_gray_soft: $gray_200;
+$bg_gray_medium: $gray_500;
+$bg_gray_hard: $gray_900;
+
+// Bordes
+$border_success: $green_200;
+$border_error: $red_200;
+$border_gray_soft: $gray_200;
+$border_gray_medium: $gray_500;
+$border_gray_hard: $gray_900;
+
+// Box de información
+$box_border: $gray_200;
+$bg_box_info: $white;
+$box_info_border: $blue_200;
+$box_info_text: $blue_A700;
+
+// Botones
+$btn_primary: $secondary;
+$btn_secondary: $bg_secondary;
+
+// Widgets
+$money_gradient_start: #0fb076;
+$money_gradient_end: #28f3c1;
+$weather_gradient_start: #0081f1;
+$weather_gradient_end: #20f2ff;
+$pharmacy_gradient_start: #b300f1;
+$pharmacy_gradient_end: #e477ff;
+$exchange: $black;
+
+// Colores Personalizados
+$info: $blue_300;
+$warn: $yellow_500;
+$error: $red_A400;
+$error_soft: $red_200;
+$success: $green_A400;
+$selection: $primary_soft;
+$shadow: $gray_500;
+$disabled: $gray_400;
+$active: $primary;
+$favorite: $white;
+$favorite_hover: $yellow_A200;
+$favorite_active: $secondary;
+$price: $secondary;
+
+// Redes
+$facebook: #3b5999;
+$twitter: #55acee;
+$messenger: #0084ff;
+$youtube: #cd201f;
+$google_play_1: #00d6ff;
+$google_play_2: #00f076;
+$instagram: #e4405f;
+$whatsapp: #25d366;
+$vimeo: #1ab7ea;
+$web: $cyan_900;
+
+// ------ CAMPOS FORMULARIO ------
+$bg_field: transparent;
+$border_field: $purple_200;
+$border_field_hover: $secondary;
+$field_icon: $secondary;
+$field_text: $text;
+$field_text_focus: $secondary;
+$field_required: $blue_A100;
+$field_placeholder: $gray_500;
+$field_icon_dropdown: $purple_200;
+$bg_field_autocomplete: $white;
+$bg_field_image: $primary;
+$border_image_upload: $purple_200;
+
+// ------ BOTONES ------
+// Primario
+$btn_primary_text: $primary;
+$btn_primary_text_hover: $white;
+$bg_btn_primary: $purple_50;
+$bg_btn_primary_hover: $primary;
+
+// Secundario
+$btn_secondary_border: $green_700;
+$btn_secondary_text: $white;
+$bg_btn_secondary: $green_700;
+
+// Editar
+$btn_edit_text: $primary;
+$btn_edit_text_hover: $white;
+$bg_btn_edit: $purple_50;
+$bg_btn_edit_hover: $primary;
+
+// Guardar
+$btn_save_text: $green_900;
+$btn_save_text_hover: $white;
+$bg_btn_save: $green_50;
+$bg_btn_save_hover: $green_700;
+
+// Consultar
+$btn_ask_text: $white;
+$bg_btn_ask: $green_700;
+
+// Crear
+$btn_create_text: $white;
+$bg_btn_create: $green_700;
+
+// Cancelar
+$btn_cancel_text: $text;
+$btn_cancel_text_hover: $white;
+$bg_btn_cancel: $white;
+$bg_btn_cancel_hover: $red_A400;
+
+// Publicar
+$btn_new: $light_green_A400;
+
+// Publicar Header Home
+$btn_new_home: $white;
+$bg_btn_new_home: $green_700;
+
+// ------ BARRA DE BUSQUEDA ------
+$bg_searchbar: $white;
+$text_searchbar: $text;
+$icon_search_searchbar: $primary;
+$icon_close_searchbar: $gray_600;
+$bg_hover_icon_close_searchbar: $gray_100;
+
+// ------ HEADER COMPACTO ------
+$bg_menu: $primary;
+
+// ------ MENU MOBILE ------
+$bg_menu_mobile: $white;
+$menu_text_profile: $white;
+$menu_border: $gray_200;
+$menu_title: $primary;
+$menu_links: $text;
+$menu_hover_links: $primary;
+$bg_menu_links: $purple_50;
+$menu__mobile_dot_notification: $primary;
+
+// ------ CATEGORIAS ------
+$bg_icon_categorie: $gray_100;
+$bg_hover_icon_categorie: $purple_50;
+$title_categorie: $secondary;
+
+// ------ NOTIFICACIONES ------
+$notification: $light_green_A400;
+$border_notification: $primary;
+
+// Notificaciones header compacto.
+$notification_header_home: $green_A700;
+$border_notification_header_home: $white;
+$notification_mobile: $primary;
+
+// ------ ITEM DE SERVICIOS ------
+$service_title: $secondary;
+$service_item_border: $gray_200;
+$service_item_border_hover: $purple_200;
+$bg_service_item: $white;
+$bg_service_item_hover: $purple_50;
+
+// ------ CARDS DE AUNTENTICACIÓN ------
+$bg_card_auth: $white;
+$bg_card_title: $primary;
+$card_title: $white;
+
+// ------ SLIDERS ------
+$pagination_active: $primary;
+
+// ------ HEAD PROFILE ------
+$bg_head_profile: $white;
+$head_profile_links: $secondary;
+$head_profile_links_hover: $secondary;
+$head_profile_links_after: $secondary;
+
+// Content
+$border_content_profile: $primary;
+$icons_content_profile: $blue_400;
+$notification_content_profile: $secondary;
+$bg_notification_content_profile: $gray_100;
+
+// ------ CARD PRODUCTO ------
+$bg_product: $white;
+$bg_product_categorie: $primary;
+$product_categorie_text: $white;
+$product_categorie_price: $text;
+$product_state_text: $white;
+$bg_product_state: $black;
+$bg_product_state_active: $green_A700;
+$product_state_text_active: $black;
+$bg_product_state_report: $error;
+$product_state_text_report: $white;
+$bg_product_state_expired: $gray_400;
+$product_state_text_expired: $black;
+
+// Destacados
+$featured: $green_A700;
+$bg_btn_featured: $green_A700;
+$border_product_featured: $green_A700;
+$btn_featured: $white;
+$icon_featured: $green_A700;
+$bg_icon_featured: $white;
+
+// ------ BREADCRUMBS ------
+$breadcrumbs: $primary;
+$breadcrumbs_hover: $secondary;
+
+// ------ PUBLICACIÓN ------
+$post_haed_title: $gray_700;
+$post_haed_title_cateogorie: $primary;
+$post_state: $blue_A700;
+$bg_post_state: $blue_50;
+$post_head_icon_date: $gray_600;
+$post_title_content: $gray_700;
+$post_subtitle_content: $gray_700;
+$post_icon_title_content: $primary;
+
+// ------ DETALLE PUBLICACIÓN ------
+$post_detail_categorie: $blue_A400;

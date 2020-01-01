@@ -1,0 +1,14 @@
+{
+  "extends": ["standard"],
+  "rules": {
+    "no-unused-vars": [
+      "off",
+      {
+        "vars": "all",
+        "args": "none",
+        "ignoreRestSiblings": true
+      }
+    ],
+    "no-return-assign": "off"
+  }
+}
