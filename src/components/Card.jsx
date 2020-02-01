@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { wrapText } from '../js/utils/wrapText'
 import { Avatar } from './Avatar'
 
-export class Card extends Component {
+export default class Card extends Component {
   constructor (props) {
     super(props)
     this.NO_DESCRIPTION = 'Este video no contiene descripción'
@@ -51,7 +51,7 @@ export class Card extends Component {
     const { video } = this.state
 
     return (
-      <article className="c-card">
+      <article className={`${this.props.className} c-card`}>
         <div>
           <a href={video.link} className="c-card__image" target="_blank" rel="noopener noreferrer">
             <figure>

@@ -9,6 +9,7 @@
         "ignoreRestSiblings": true
       }
     ],
-    "no-return-assign": "off"
+    "no-return-assign": "off",
+    "no-new": "off"
   }
 }

@@ -1,27 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export default class Container extends Component {
-  computedClassName () {
-    const computed = []
-    const classes = {
-      'l-grid': this.props.grid,
-      'l-gap': this.props.gap
+export default function Container (props) {
+  function isWrap () {
+    if (props.wrap !== undefined) {
+      return 'l-container'
     }
-
-    for (const key in classes) {
-      if (classes[key]) computed.push(key)
-    }
-
-    return computed.join(' ')
   }
 
-  render () {
-    const className = this.computedClassName()
-
-    return (
-      <div className={className}>
-        {this.props.children}
+  return (
+    <section className={`l-section ${props.className}`}>
+      <div className={isWrap()}>
+        {props.children}
       </div>
-    )
-  }
+    </section>
+  )
 }
